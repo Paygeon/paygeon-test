@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden; /* This ensures that if your images are bigger than the header, they won't overflow */
+}
+
+.background-image {
+    width: 100%; /* This will make the background image fill the width of the header */
+    height: 100%; /* This will make the background image fill the height of the header */
+    object-fit: cover; /* This ensures that the image scales appropriately */
+}
+
+.top-image {
+    position: absolute;
+    bottom: 0;       /* Anchoring the image to the bottom */
+    left: 0;         /* Starts from the leftmost side */
+    width: 100%;     /* Stretches image horizontally across the header */
+    height: auto;    /* Keep the original aspect ratio for the height */
+}
+
+
+
+.sidebar {
+    top: 520px; /* Adjusted this for header's height + padding */
+    width: 200px;
+    background-color: #fff;
+}
+
+.sidebar-sticky {
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    color: blue;
+}
+
+.content {
+    margin-left: 210px;
+    padding: 20px;
+}
+
+.section {
+    height: 800px; /* Just for demo purposes */
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
